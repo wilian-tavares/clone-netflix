@@ -1,0 +1,131 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*elementos base*/
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, Serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black' Times;
+    font-size: 40px;  
+}
+
+header nav a {
+    color: #AAA;
+    margin-right: 20px;
+    
+}
+header nav a:hover {
+    color: #fff;
+}
+
+/*Filme principal */
+.filme-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    font-size: 16px;
+    background: linear-gradient(rgb(0,0,0,.50),rgb(0,0,0,.50)100%), url('../img/la-casa-de-papel.jpg');
+    
+    height: 400px;
+    background-size: cover; 
+    
+}
+
+.filme-principal .descricao {
+   margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 20px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 30px;  
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;  
+}
+
+.carrosel-filmes {
+    position:relative;
+    margin-top: -40px;
+}
+.item {
+    cursor: pointer;
+    position:relative
+
+}
+.item:hover{
+    transform: scale(1.1);
+}
+
+.carrosel-filmes span {
+    font-size: 3rem;
+    position: relative;
+    z-index: 2;
+    
+    top: 250px;
+    left:10px; 
+    height: 100px;
+    
+color: var(--vermelho);
+    background: rgba(0, 0, 0, 0.6);
+
+    border-radius: 10px;
+}
+
