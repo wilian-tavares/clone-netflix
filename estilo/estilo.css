@@ -14,12 +14,17 @@ body {
     background: var(--preta);
     font-family: 'Arial', Times, Serif;
     color: white;
+    
 }
 
 header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    
+    
+   
 }
 
 header .logo {
@@ -123,7 +128,7 @@ header nav a:hover {
     left:10px; 
     height: 100px;
     
-color: var(--vermelho);
+    color: var(--vermelho);
     background: rgba(0, 0, 0, 0.6);
 
     border-radius: 10px;

@@ -1,7 +1,8 @@
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
-    nav: false,
+    nav: true,
+
     responsive: {
         0: {
             items: 1
@@ -15,6 +16,12 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-let novaPagina = window.open('https://www.youtube.com/watch?v=3GoDZUf_SPQ&ab_channel=F%C3%A1bioRabin')
 
-novaPagina = document.getElementById('novoFilme').novaPagina;
+
+function youtube(filme) {
+    // let novaPagina = window.open('https://www.youtube.com/watch?v=fIqE8jND6SY&list=RDMMfIqE8jND6SY&start_radio=1&ab_channel=SteffiVertriest')
+    let novaPagina = window.open(filme)
+
+    novaPagina = document.getElementById('novoFilme').novaPagina;
+
+}
